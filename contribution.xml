@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="com.ac.pdfexport"
+	title="DS PDF Export Button"
+	version="1.0"
+	vendor="AC">
+	<component
+		id="PDFExport"
+		title="PDF Export Button"
+		icon="res/icon.png"
+		handlerType="div"
+		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html">
+		<jsInclude>res/js/jspdf.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.addhtml.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.addimage.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.autoprint.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.cell.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.from_html.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.javascript.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.png_support.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.sillysvgrenderer.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.split_text_to_size.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.standard_fonts_metrics.js</jsInclude>
+		<jsInclude>res/js/jspdf.plugin.total_pages.js</jsInclude>
+		<jsInclude>res/js/html2canvas.js</jsInclude>
+		<jsInclude>res/js/rgbcolor.js</jsInclude>
+		<jsInclude>res/js/StackBlur.js</jsInclude>
+		<jsInclude>res/js/canvg.js</jsInclude>
+		<jsInclude>res/js/saveSvgAsPng.js</jsInclude>
+		<jsInclude>res/js/FileSaver.js</jsInclude>		
+		<jsInclude>res/js/component.js</jsInclude>
+		
+		<property
+			id="text"
+			title="Text"
+			type="String"
+			group="Display"/>
+		<property
+			id="onclick"
+			title="On Click"
+			type="ScriptText"
+			group="Events"/>
+		<property
+			id="pdfMethod"
+			title="PDF export type:"
+			type="int"
+			group="Events"/>
+		<initialization>
+			<defaultValue property="WIDTH">100</defaultValue>
+			<defaultValue property="HEIGHT">20</defaultValue>
+			<defaultValue property="text">Export PDF</defaultValue>
+			<defaultValue property="pdfMethod">1</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>

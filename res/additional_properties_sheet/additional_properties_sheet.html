@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Colored Box Property Sheet</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="/aad/zen.rt.components.sdk/resources/js/sdk_propertysheets_handler.js"></script>
+		<script src="additional_properties_sheet.js"></script>
+	</head>
+	<script>
+		new com.ac.pdfexport.PdfexportPropertyPage();
+	</script>
+	<body>
+		<form id="form">
+			<fieldset>
+				<legend>PDF Export Settings</legend>
+				<table>
+					<tr>
+						<td>Click Action:</td>
+						<td><select id="select">
+  								<option value="1">Save PDF</option>
+  								<option value="2">Open PDF in a new page.</option>
+  								<option value="3">Open PDF in the same page.</option>
+						</select></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+	</body>
+</html>

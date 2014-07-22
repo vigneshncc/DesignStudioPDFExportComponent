@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Require-Bundle: com.sap.ip.bi.zen.rt.components.sdk.eclipse
+Bundle-Vendor: AC
+Bundle-Version: 1.0.1
+Bundle-Name: DS PDF Export Button
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.ac.pdfexport;singleton:=true
+
+
